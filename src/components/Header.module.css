@@ -1,0 +1,22 @@
+.header{
+ height: calc(100vh - 4rem);
+ width: 90vw;
+ margin: 0 auto;
+ max-width: 1170px;
+ padding: 1rem;
+}
+.headerInfo{
+ margin-bottom: 2rem;
+}
+@media screen and (min-width:768px) {
+ .header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+ }
+ .taskImg{
+  height: 30rem;
+
+ }
+}

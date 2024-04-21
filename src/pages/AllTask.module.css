@@ -1,0 +1,23 @@
+.sectionCenter{
+ width: 90vw;
+ max-width: 1170px;
+ margin:  0 auto;
+ padding: 3rem 0;
+}
+.addNewTask{
+ background: none;
+ border: none;
+ color: blueviolet;
+ font-size: 1rem;
+ font-weight: 600;
+ text-transform: capitalize;
+}
+.taskbtnContainer{
+ display: flex;
+ justify-content: space-between;
+}
+.load{
+text-align: center;
+font-size: 2rem;
+margin-top: 3rem;
+}

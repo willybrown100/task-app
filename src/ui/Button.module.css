@@ -1,0 +1,9 @@
+.btn{
+ background-color: blueviolet;
+ font-weight: 600;
+ border: none;
+ padding: 0.5rem;
+ border-radius: 0.5rem;
+ text-transform: capitalize;
+ color: black;
+}

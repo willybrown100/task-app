@@ -1,0 +1,49 @@
+.taskContainer{
+ border: 2px solid var( --clr-grey-10);
+ border-radius: 0.6rem;
+ margin-bottom: 0.5rem;
+ padding: 0.3rem;
+}
+.taskHeader{
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid var(--clr-grey-10);
+padding: 0.3rem;
+}
+.editBtn{
+ background: blueviolet;
+ border: none;
+ padding: 0.2rem 0.6rem;
+ border-radius: 0.3rem;
+cursor: pointer;
+color: black;
+ text-transform: capitalize;
+}
+.deleteBtn{
+ color: black;
+ background: none;
+ border: 2px solid var(--clr-grey-10);
+ padding: 0.3rem 0.6rem;
+ border-radius: 0.5rem;
+ cursor: pointer;
+ text-transform: capitalize;
+}
+.red{
+ color: red;
+ font-weight: 600;
+}
+
+.green{
+ font-weight: 600;
+ color: green;
+}
+.taskOperations{
+ display: flex;
+ gap: 1rem;
+}
+.notask{
+ text-align: center;
+ font-size: 2rem;
+ margin-top: 2rem;
+}

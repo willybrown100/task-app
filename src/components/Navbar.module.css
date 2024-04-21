@@ -1,0 +1,64 @@
+.logo{
+ color: blueviolet;
+ font-size: 1.8rem;
+ text-transform: capitalize;
+ font-weight: 600;
+}
+.navHeader{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.navCenter{
+width:90vw ;
+max-width: 1170px;
+margin: 0 auto;
+
+}
+
+
+@media screen and (min-width:768px) {
+ .navCenter{
+  display: flex;
+    justify-content: space-between;
+  align-items: center;
+ }
+}
+
+nav{
+ background-color: var(--clr-grey-10);
+ /* border-bottom: 2px;
+ border-color: azure; */
+ padding: 1rem;
+
+}
+.navLinks{
+text-align: center;
+font-weight: 600;
+text-transform: capitalize;
+
+gap: 1rem;
+display: none;
+transition: all 1s linear;
+}
+.bar{
+ font-size: 1.2rem;
+ border: none;
+ background: none;
+ cursor: pointer;
+}
+@media screen and  (min-width:768px) {
+ .bar{
+  display: none;
+ }
+}
+@media screen and (min-width:768px) {
+ .navLinks{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+}
+.showBar{
+  display:grid
+}
