@@ -3,25 +3,16 @@
  border: none;
  padding: 0.5rem;
  border-radius: 0.6rem;
-/* width: 100%; */
+width: 100%;
 cursor: pointer;
 transition: all 1s linear;
-position: fixed;
-top: 85%;
-bottom: 50px;
-right: 50px;
-left: 50px;
+
 }
-@media screen and (min-width:768px) {
- .backTotop{
- left: 90px;
-right: 90px;
- }
-}
+
 .backTotop:hover{
   background-color: rgb(150, 107, 190);
 }
 .backTotopCon{
  text-align: center;
-
+text-transform: capitalize;
 }

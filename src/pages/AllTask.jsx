@@ -35,8 +35,8 @@ console.log(task)
              ))}
            </ul>
          )}
-       </article>
        <BacktoTop/>
+       </article>
      </section>
    </>
  );
