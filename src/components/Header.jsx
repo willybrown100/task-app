@@ -7,7 +7,7 @@ function Header() {
      <div className={styles.headerInfo}>
        <h2>
          manage your tasks on <br />
-         <span className="text-brand">Tasks duty</span>
+         <span className={styles.duty}>Tasks duty</span>
        </h2>
        <p>
          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic quaerat

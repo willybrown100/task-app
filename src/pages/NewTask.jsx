@@ -69,7 +69,6 @@ createTask(data);
          </div>
        <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
          <div className={styles.formControl}>
-           <label >task title</label>
            <input
              type="text"
              id="title"
@@ -78,6 +77,7 @@ createTask(data);
              disabled={isWorking}
              placeholder="eg business,project"
            />
+           <label >task title</label>
          </div>
          <div className={styles.formControl}>
            <label>description</label>
@@ -107,3 +107,19 @@ createTask(data);
 }
 
 export default NewTask
+
+
+    //  <div className='relative' id='textInput'>
+    //             <input className='border pt-[1.2rem] pb-[.5rem] px-[1rem] rounded-md w-full' 
+    //             type="text"
+    //             id='title'
+    //              placeholder='E.g. Project Defense, Assignment....'
+    //              {...register("title", { required: true, maxLength: 20 })}
+    //              aria-invalid={errors.title ? "true" : "false"}
+    //             />
+    //             {errors.title?.type === "required" && (
+    //                 <p className='font-medium pt-2 text-[18px] text-red-500' role="alert">Title is required</p>
+    //             )}
+    //             <label className=' md
+    //             md:text-[20px]  absolute bg-white -top-6 left-6 p-[.6rem] text-[#9c9c9c] font-semibold' htmlFor="text">Task Title</label>
+    //         </div>
