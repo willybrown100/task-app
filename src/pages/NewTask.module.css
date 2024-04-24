@@ -27,6 +27,7 @@ textarea{
 }
 select{
  text-align: center;
+  background-color: white;
 }
 .btnContainer{
  display: flex;
