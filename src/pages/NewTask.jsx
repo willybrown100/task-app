@@ -6,6 +6,7 @@ import {  useMutation, useQueryClient } from "@tanstack/react-query";
 import { createTasks, editTasks } from "../services/getTasks";
 import toast from "react-hot-toast";
 import { useLocation, useNavigate } from "react-router-dom";
+import BacktoTop from "../components/BacktoTop";
 
 function NewTask() {
   //receiving data from url
@@ -61,12 +62,12 @@ createTask(data);
    <section>
      <Navbar />
      <article className={styles.formSection}>
-         <div className={styles.btnContainer}>
-           <button className={styles.chevronleft} onClick={()=>navigate(-1)}>
-             <HiChevronLeft className={styles.backbtn} />
-           </button>
-           <h3>{isEditSession ? "edit task" : "new task"}</h3>
-         </div>
+       <div className={styles.btnContainer}>
+         <button className={styles.chevronleft} onClick={() => navigate(-1)}>
+           <HiChevronLeft className={styles.backbtn} />
+         </button>
+         <h3>{isEditSession ? "edit task" : "new task"}</h3>
+       </div>
        <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
          <div className={styles.formControl}>
            <input
@@ -77,7 +78,7 @@ createTask(data);
              disabled={isWorking}
              placeholder="eg business,project"
            />
-           <label >task title</label>
+           <label>task title</label>
          </div>
          <div className={styles.formControl}>
            <label>description</label>
@@ -98,9 +99,10 @@ createTask(data);
            </select>
          </div>
          <button className={styles.submitBtn} disabled={isWorking}>
-          done
+           done
          </button>
        </form>
+       <BacktoTop />
      </article>
    </section>
  );
@@ -108,18 +110,3 @@ createTask(data);
 
 export default NewTask
 
-
-    //  <div className='relative' id='textInput'>
-    //             <input className='border pt-[1.2rem] pb-[.5rem] px-[1rem] rounded-md w-full' 
-    //             type="text"
-    //             id='title'
-    //              placeholder='E.g. Project Defense, Assignment....'
-    //              {...register("title", { required: true, maxLength: 20 })}
-    //              aria-invalid={errors.title ? "true" : "false"}
-    //             />
-    //             {errors.title?.type === "required" && (
-    //                 <p className='font-medium pt-2 text-[18px] text-red-500' role="alert">Title is required</p>
-    //             )}
-    //             <label className=' md
-    //             md:text-[20px]  absolute bg-white -top-6 left-6 p-[.6rem] text-[#9c9c9c] font-semibold' htmlFor="text">Task Title</label>
-    //         </div>

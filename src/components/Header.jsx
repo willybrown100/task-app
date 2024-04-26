@@ -1,4 +1,5 @@
 import Button from "../ui/Button";
+import BacktoTop from "./BacktoTop";
 import styles from './Header.module.css'
 function Header() {
 
@@ -17,8 +18,13 @@ function Header() {
        <Button>go to my tasks</Button>
      </div>
      <div className=" md:block">
-       <img src="images/task-img2.png" alt="task-img" className={styles.taskImg} />
+       <img
+         src="images/task-img2.png"
+         alt="task-img"
+         className={styles.taskImg}
+       />
      </div>
+
    </header>
  );
 }

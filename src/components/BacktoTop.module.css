@@ -1,17 +1,18 @@
 .backTotop{
- background-color: blueviolet;
+ background-color: transparent;
  border: none;
  padding: 0.5rem;
  border-radius: 0.6rem;
 width: 100%;
 cursor: pointer;
+color: blueviolet;
+text-transform: capitalize;
+font-weight: 600;
 transition: all 1s linear;
 
 }
 
-.backTotop:hover{
-  background-color: rgb(150, 107, 190);
-}
+
 .backTotopCon{
  text-align: center;
 text-transform: capitalize;

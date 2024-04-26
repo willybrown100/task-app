@@ -1,0 +1,10 @@
+.avatar{
+ object-fit: cover;
+ height: 3.2rem;
+ border-radius: 50%;
+ border:2px solid blueviolet
+}
+.AvatarContainer{
+ width: 3.2rem;
+ margin: 0 auto;
+}

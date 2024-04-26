@@ -2,6 +2,7 @@ import { NavLink } from 'react-router-dom';
 import styles from './Navbar.module.css'
 import { HiBars3 } from "react-icons/hi2";
 import { useState } from 'react';
+import Avatar from './Avatar';
 function Navbar() {
   const [isOpen,setIsOpen]=useState(false)
   const handleClick = function(){
@@ -24,6 +25,9 @@ function Navbar() {
          </li>
          <li>
            <NavLink to="/alltask">all task</NavLink>
+         </li>
+         <li>
+           <Avatar/>
          </li>
        </ul>
      </div>
